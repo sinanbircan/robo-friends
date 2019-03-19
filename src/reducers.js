@@ -4,7 +4,7 @@ const initialState = {
     searchInput: ""
 };
 
-const reducer = (state, action) => {
+export const searchReducer = (state = initialState, action = {}) => {
     switch (action.type) {
         case SET_SEARCH_FIELD:
             return {...state, searchInput: action.payload};
